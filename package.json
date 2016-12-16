@@ -1,15 +1,13 @@
 {
-  "name": "electron-boilerplate",
-  "productName": "Electron Boilerplate",
-  "description": "Starter for your Electron application",
-  "version": "0.0.0",
-  "author": "Mr. Gumby <mr.gumby@example.com>",
-  "copyright": "© 2016, Gumby inc.",
-  "homepage": "http://example.com",
+  "name": "dlna-broadcaster",
+  "productName": "DLNA Broadcaster",
+  "description": "Electron/Node.JS app, broadcast directory through DLNA",
+  "version": "0.0.1",
+  "author": "Jeremy Bernard <jeremy@bernard.sh>",
   "license": "MIT",
   "main": "app/background.js",
   "build": {
-    "appId": "com.example.electron-boilerplate",
+    "appId": "dlna-broadcaster",
     "files": [
       "app/**/*",
       "node_modules/**/*",
