@@ -1,16 +1,18 @@
+body {
+  font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
 .file-uploader {
   background-color: #dbefe9;
   border-radius: 3px;
   color: #242424;
 }
 .file-uploader__message-area {
-  font-size: 18px;
   padding: 1em;
-  text-align: center;
   color: #377a65;
 }
 .file-list {
-  background-color: white;
   font-size: 16px;
 }
 .file-list__name {
@@ -19,16 +21,18 @@
   text-overflow: ellipsis;
 }
 .file-list li {
-  height: 50px;
-  line-height: 50px;
-  margin-left: .5em;
+  background-color: white;
   border: none;
+  height: 35px;
+  line-height: 35px;
+  margin-bottom: 2px;
   overflow: hidden;
+  padding-left: .5em;
 }
 .removal-button {
-  width: 20%;
+  width: 10%;
   border: none;
-  background-color: #d65d38;
+  background-color: #72bfa7;
   color: white;
 }
 .removal-button::before {
@@ -42,7 +46,6 @@
   transition: background-color 1s, height 1s;
 }
 .file-chooser p {
-  font-size: 18px;
   padding-top: 1em;
 }
 .file-uploader {
@@ -58,7 +61,7 @@
   float: right;
 }
 .file-list {
-  margin: 0 auto;
+  margin: 15px auto;
   max-width: 90%;
 }
 .file-list__name {
@@ -66,16 +69,26 @@
   float: left;
 }
 .removal-button {
+  cursor: pointer;
   display: inline-block;
   height: 100%;
   float: right;
 }
-.file-chooser {
-  width: 90%;
-  margin: .5em auto;
-}
 .file-chooser__input {
-  margin: 0 auto;
+	opacity: 0;
+	overflow: hidden;
+}
+.file-selector__label {
+  border: 2px solid #72bfa7;
+  color: #72bfa7;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  padding: 10px;
+}
+.file-selector__label:hover {
+  border: 2px solid #a7d7c8;
+  color: #a7d7c8;
 }
 .file-uploader__submit-button {
   width: 100%;
