@@ -3,25 +3,21 @@
   border-radius: 3px;
   color: #242424;
 }
-
 .file-uploader__message-area {
   font-size: 18px;
   padding: 1em;
   text-align: center;
   color: #377a65;
 }
-
 .file-list {
   background-color: white;
   font-size: 16px;
 }
-
 .file-list__name {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .file-list li {
   height: 50px;
   line-height: 50px;
@@ -29,7 +25,6 @@
   border: none;
   overflow: hidden;
 }
-
 .removal-button {
   width: 20%;
   border: none;
@@ -42,7 +37,6 @@
 .removal-button:focus {
   outline: 0;
 }
-
 .file-chooser {
   padding: 1em;
   transition: background-color 1s, height 1s;
@@ -51,7 +45,6 @@
   font-size: 18px;
   padding-top: 1em;
 }
-
 .file-uploader {
   max-width: 400px;
   height: auto;
@@ -64,32 +57,26 @@
   margin-top: 2em;
   float: right;
 }
-
 .file-list {
   margin: 0 auto;
   max-width: 90%;
 }
-
 .file-list__name {
   max-width: 70%;
   float: left;
 }
-
 .removal-button {
   display: inline-block;
   height: 100%;
   float: right;
 }
-
 .file-chooser {
   width: 90%;
   margin: .5em auto;
 }
-
 .file-chooser__input {
   margin: 0 auto;
 }
-
 .file-uploader__submit-button {
   width: 100%;
   border: none;
@@ -101,30 +88,29 @@
 .file-uploader__submit-button:hover {
   background-color: #a7d7c8;
 }
-
-.file-list li:after, .file-uploader:after {
+.file-list li:after,
+.file-uploader:after {
   content: "";
   display: table;
   clear: both;
 }
-
 .hidden {
   display: none;
 }
 .hidden input {
   display: none;
 }
-
 .error {
   background-color: #d65d38;
   color: white;
 }
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
-
-ul, li {
+ul,
+li {
   margin: 0;
   padding: 0;
 }
