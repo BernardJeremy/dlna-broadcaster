@@ -1,32 +1,29 @@
 <!doctype html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DLNA Broadcaster</title>
-
     <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
-    
-    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
-    <script src="scripts/jquery.min.js"></script>    
-    <script src="scripts/selectFiles.js"></script>    
-    <script src="scripts/handleSubmit.js"></script>    
-    <script>if (window.module) module = window.module;</script>
-
-    <script src="helpers/context_menu.js"></script>
-    <script src="helpers/external_links.js"></script>
-
-    <script src="app.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <form method="post" class="file-uploader" action="" enctype="multipart/form-data">
-        <div class="file-uploader__message-area">
-            <p>Select a directory to share</p>
-        </div>
-        <div class="file-chooser">
-            <input class="file-chooser__input" type="file" webkitdirectory>
-        </div>
-        <input class="file-uploader__submit-button" type="submit" value="Share">
+      <div class="file-uploader__message-area">
+        <p>Select a directory to share</p>
+      </div>
+      <div class="file-chooser">
+        <input id="file-selector__input" class="file-chooser__input" type="file" webkitdirectory>
+        <label for="file-selector__input" class="file-selector__label">Choose a directory</label>
+      </div>
+      <input class="file-uploader__submit-button" type="submit" value="Share">
     </form>
-
-</body>
+  </body>
+  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/selectFiles.js"></script>
+  <script src="scripts/handleSubmit.js"></script>
+  <script>if (window.module) module = window.module;</script>
+  <script src="helpers/context_menu.js"></script>
+  <script src="helpers/external_links.js"></script>
+  <script src="app.js"></script>
 </html>
